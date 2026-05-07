@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"> 
+    <title>Document</title>
+    <style>
+        main{
+         display: grid;
+        height: 100vh ;
+         grid-template-columns:200px 1fr 1fr ;
+         grid-template-rows: 50px 1fr  60px;
+          
+          /* definimos las areas*/
+          grid-template-areas: 
+             "head head head"
+             "side s1 s3"
+             "side s1 s4"
+             "side s2 s5"
+             "foot foot foot";
+             gap: 10px;
+        }
+          header{
+            grid-area: head;
+            grid-template-columns:200px 1fr 60px;
+            text-align: center;
+            background-color: blueviolet;
+            color: rgb(255, 255, 255);
+            font-size: 2em;
+          }
+          .sidebar{
+            grid-area: side;
+            background-color: aquamarine;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+          }
+          footer{
+           grid-area: foot;
+            background-color: aquamarine;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+          }
+          .s1{
+            grid-area: s1;
+            background-color: brown;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+          }
+          .s4{
+            grid-area: s4;
+            background-color: rgb(179, 98, 98);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+          }
+          .s2{
+            grid-area: s2;
+             background-color: rgb(165, 206, 166);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+          }
+          .s3{
+            grid-area: s3;
+             background-color: rgb(192, 192, 166);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+          }
+          .s5{
+            grid-area: s5;
+             background-color: rgb(98, 151, 179);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+          }
+      
+    </style>
+    
+</head>
+<body>
+    <main>
+        <header>ESTO ES EL HEADER</header>
+        <Section class="Sidebar">SIDEBAR</Section>
+        <Section class="s1">Seccion 1</Section>
+        <Section class="s2">Seccion 2</Section>
+        <Section class="s3">Seccion 3</Section>
+        <Section class="s4">Seccion 4</Section>
+        <Section class="s5">Seccion 5</Section>
+    </main>
+  
+</body>
+</html>
